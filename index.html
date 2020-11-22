@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <title>Loan Approval</title>
+
+</head>
+<body>
+
+<style>
+    body {
+        background-image: url("https://i1.wp.com/media.premiumtimesng.com/wp-content/files/DiamondBankLogo_989277929.jpg?fit=800%2C494&ssl=1");
+
+        background-size: 100%;
+    }
+</style>
+
+<div class="container w-50">
+    <h1>Loan Approval</h1>
+    <h3>By Diamond Lending Bank</h3>
+    <br>
+    <fieldset>
+        <legend class="legend">Calculate Loan Approval</legend>
+        <form id="form">
+            <div class="form-group">
+                <label for="salary">Enter Salary:</label>
+                <input name="salary" id="salary" type="text" class="form-control" required>
+                <br>
+                <label for="creditScore">Enter Credit Score:</label>
+                <input name="creditScore" id="creditScore" type="text" class="form-control" required>
+                <br>
+                <label for="monthsAtJob">Enter Months At Job:</label>
+                <input name="monthsAtJob" id="monthsAtJob" type="text" class="form-control" required>
+                <br>
+            </div>
+            <button class="btn btn-primary">Calculate Loan Approval</button>
+        </form>
+    </fieldset>
+    <span id="loanStatus"></span>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
